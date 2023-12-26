@@ -1,8 +1,8 @@
 "use strict";
 
 function slugify(title) {
-  title.toLowerCase();
-  const words = title.split(" ");
+  const normalizeTitle = title.toLowerCase();
+  const words = normalizeTitle.split(" ");
   return words.join("-");
    }
 
